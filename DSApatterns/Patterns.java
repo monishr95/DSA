@@ -92,13 +92,179 @@ public class Patterns {
 //		0
 //	}
 
+//	private static void pattern1(int n) {
+//		for (int i = 0; i < n; i++) {
+//			for (int j = 0; j < n-i-1; j++) {
+//				System.out.print(" ");
+//			}
+//			for (int j = 0; j < (2*i)+1; j++) {
+//				System.out.print("*");
+//			}
+//			for (int j = 0; j < n-i-1; j++) {
+//				System.out.print(" ");
+//			}
+//			System.out.println();
+//		}
+//		output
+//		    *    
+//		   ***   
+//		  *****  
+//		 ******* 
+//		*********
+//	}
+
+//	private static void pattern1(int n) {
+//		for (int i = 0; i < n; i++) {
+//			for (int j = 0; j <= i; j++) {
+//				System.out.print(" ");
+//			}
+//			for (int j = 0; j < (2*n)-(2*i+1); j++) {
+//				System.out.print("*");
+//			}
+//			for (int j = 0; j <=i; j++) {
+//				System.out.print(" ");
+//			}
+//			System.out.println();
+//		}
+//		output
+//		 ********* 
+//		  *******  
+//		   *****   
+//		    ***    
+//		     *     
+//	}
+
+//	private static void pattern1(int n) {
+//		for (int i = 0; i < n; i++) {
+//			for (int j = 0; j <= n - i - 1; j++) {
+//				System.out.print(" ");
+//			}
+//			for (int j = 0; j < (2 * i) + 1; j++) {
+//				System.out.print("*");
+//			}
+//			for (int j = 0; j <= n - i - 1; j++) {
+//				System.out.print(" ");
+//			}
+//			System.out.println();
+//		}
+//		for (int i = 0; i < n; i++) {
+//			for (int j = 0; j <= i; j++) {
+//				System.out.print(" ");
+//			}
+//			for (int j = 0; j < (2 * n) - (2 * i + 1); j++) {
+//				System.out.print("*");
+//			}
+//			for (int j = 0; j <= i; j++) {
+//				System.out.print(" ");
+//			}
+//			System.out.println();
+//		}
+//		output
+//		     *     
+//		    ***    
+//		   *****   
+//		  *******  
+//		 ********* 
+//		 ********* 
+//		  *******  
+//		   *****   
+//		    ***    
+//		     *     
+//	}
+
+//	private static void pattern1(int n) {
+//		// Part 1: Print the increasing star pattern
+//		for (int i = 1; i <= n; i++) {
+//			for (int j = 1; j <= i; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+//
+//		// Part 2: Print the decreasing star pattern
+//		for (int i = n - 1; i >= 1; i--) {
+//			for (int j = 1; j <= i; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+//	output
+//	*
+//	**
+//	***
+//	****
+//	*****
+//	****
+//	***
+//	**
+//	*
+//	}
+
+//	private static void pattern1(int n) {
+//		for (int i = 1; i <= n; i++) {
+//			// Determine the starting number for the current row
+//			// If the row number is odd, start with 1.
+//			// If the row number is even, start with 0.
+//			int startNum = (i % 2 == 1) ? 1 : 0;
+//
+//			// Print the numbers for the current row
+//			for (int j = 1; j <= i; j++) {
+//				System.out.print(startNum);
+//				// Flip the number for the next position
+//				startNum = 1 - startNum;
+//			}
+//			System.out.println();
+//		}
+//		output
+//		1
+//		01
+//		101
+//		0101
+//		10101
+//	}
+
+//	private static void pattern1(int n) {
+//		int spaces = 2 * (n - 1);
+//		for (int i = 1; i <= n; i++) {
+//			for (int j = 1; j <= i; j++) {
+//				System.out.print(j);
+//			}
+//			for (int j = 1; j <= spaces; j++) {
+//				System.out.print(" ");
+//			}
+//			for (int j = i; j > 0; j--) {
+//				System.out.print(j);
+//			}
+//			spaces -= 2;
+//			System.out.println();
+//		}
+//		output
+//		1        1
+//		12      21
+//		123    321
+//		1234  4321
+//		1234554321
+//
+//	}
+
+//	private static void pattern1(int n) {
+//		int count = 0;
+//		for (int i = 0; i < n; i++) {
+//			for (int j = 0; j <= i; j++) {
+//				System.out.print(count);
+//				count++;
+//			}
+//			System.out.println();
+//		}
+//		output
+//		0
+//		1 2
+//		3 4 5
+//		6 7 8 9
+//	}
+
 	private static void pattern1(int n) {
-		for (int i = 0; i <= n; i++) {
-			for (int j = 1; j <= n - i; j++) {
-				System.out.print(j);
-			}
-			System.out.println();
-		}
+
 	}
 
 	public static void main(String[] args) {
