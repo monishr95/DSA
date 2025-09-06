@@ -263,9 +263,86 @@ public class Patterns {
 //		6 7 8 9
 //	}
 
-	private static void pattern1(int n) {
+//	private static void pattern1(int n) {
+//		for (int i = 0; i < n; i++) {
+//			for (char ch = 'A'; ch <= 'A' + i; ch++) {
+//				System.out.print(ch + " ");
+//
+//			}
+//			System.out.println();
+//		}
+//		output
+//		A 
+//		A B 
+//		A B C 
+//		A B C D 
+//	}
 
-	}
+//	private static void pattern1(int n) {
+//		for (int i = n - 1; i >= 0; i--) {
+//			for (char ch = 'A'; ch <= 'A' + i; ch++) {
+//				System.out.print(ch + " ");
+//
+//			}
+//			System.out.println();
+//		}
+//		output
+//		A B C D 
+//		A B C 
+//		A B 
+//		A 
+//	}
+
+//	private static void pattern1(int n) {
+//		char ch = 'A';
+//		for (int i = 0; i < n; i++) {
+//			for (int j = 0; j <= i; j++) {
+//				System.out.print(ch + " ");
+//			}
+//			ch++;
+//			System.out.println();
+//		}
+//		output
+//		A 
+//		B B 
+//		C C C 
+//		D D D D 
+//	}
+
+//	private static void pattern1(int N) {
+//
+//		// Outer loop for the number of rows.
+//		for (int i = 0; i < N; i++) {
+//
+//			// for printing the spaces.
+//			for (int j = 0; j < N - i - 1; j++) {
+//				System.out.print(" ");
+//			}
+//
+//			// for printing the characters.
+//			char ch = 'A';
+//			int breakpoint = (2 * i + 1) / 2;
+//			for (int j = 1; j <= 2 * i + 1; j++) {
+//
+//				System.out.print(ch);
+//				if (j <= breakpoint)
+//					ch++;
+//				else
+//					ch--;
+//			}
+//
+//			// for printing the spaces again.
+//			for (int j = 0; j < N - i - 1; j++) {
+//				System.out.print(" ");
+//			}
+//			System.out.println();
+//		}
+//		output
+//		    A   
+//		   ABA  
+//		  ABCBA 
+//		 ABCDCBA
+//	}
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
