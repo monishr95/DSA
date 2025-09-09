@@ -1,7 +1,7 @@
 package recursion_problems;
 
 //using functions
-public class SumOfFirstN {
+public class Sum_Of_First_N {
 	static int func(int n) {
 
 		// Base Condition.
@@ -14,6 +14,13 @@ public class SumOfFirstN {
 		return n + func(n - 1);
 
 	}
+	// 3+n-1;
+	// 2+n-1;
+	// 1+n-1;
+	// 0-now it will return to the previous stage
+	// 1+0;
+	// 2+1;
+	// 3+3; so the final answer will be '6'.
 
 	public static void main(String[] args) {
 

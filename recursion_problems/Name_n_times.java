@@ -1,5 +1,7 @@
 package recursion_problems;
 
+//print the name for n times
+
 public class Name_n_times {
 	static void func(int i, int n) {
 

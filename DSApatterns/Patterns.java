@@ -309,40 +309,40 @@ public class Patterns {
 //		D D D D 
 //	}
 
-//	private static void pattern1(int N) {
-//
-//		// Outer loop for the number of rows.
-//		for (int i = 0; i < N; i++) {
-//
-//			// for printing the spaces.
-//			for (int j = 0; j < N - i - 1; j++) {
-//				System.out.print(" ");
-//			}
-//
-//			// for printing the characters.
-//			char ch = 'A';
-//			int breakpoint = (2 * i + 1) / 2;
-//			for (int j = 1; j <= 2 * i + 1; j++) {
-//
-//				System.out.print(ch);
-//				if (j <= breakpoint)
-//					ch++;
-//				else
-//					ch--;
-//			}
-//
-//			// for printing the spaces again.
-//			for (int j = 0; j < N - i - 1; j++) {
-//				System.out.print(" ");
-//			}
-//			System.out.println();
-//		}
+	private static void pattern1(int N) {
+
+		// Outer loop for the number of rows.
+		for (int i = 0; i < N; i++) {
+
+			// for printing the spaces.
+			for (int j = 0; j < N - i - 1; j++) {
+				System.out.print(" ");
+			}
+
+			// for printing the characters.
+			char ch = 'A';
+			int breakpoint = (2 * i + 1) / 2;
+			for (int j = 1; j <= 2 * i + 1; j++) {
+
+				System.out.print(ch);
+				if (j <= breakpoint)
+					ch++;
+				else
+					ch--;
+			}
+
+			// for printing the spaces again.
+			for (int j = 0; j < N - i - 1; j++) {
+				System.out.print(" ");
+			}
+			System.out.println();
+		}
 //		output
 //		    A   
 //		   ABA  
 //		  ABCBA 
 //		 ABCDCBA
-//	}
+	}
 
 	
 	
