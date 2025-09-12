@@ -2,6 +2,8 @@ package Step_2_DSA;
 
 public class _1_SelectionSort {
 	static void selection_sort(int arr[], int n) {
+//In each iteration, we will select the minimum element from the range of the unsorted array using an inner loop.
+
 		for (int i = 0; i < n - 1; i++) {
 			int mini = i;
 			for (int j = i + 1; j < n; j++) {
