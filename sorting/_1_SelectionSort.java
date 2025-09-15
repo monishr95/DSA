@@ -1,4 +1,4 @@
-package Step_2_DSA;
+package sorting;
 
 public class _1_SelectionSort {
 	static void selection_sort(int arr[], int n) {

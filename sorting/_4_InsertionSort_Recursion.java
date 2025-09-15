@@ -1,4 +1,4 @@
-package Step_2_DSA;
+package sorting;
 
 public class _4_InsertionSort_Recursion {
 	static void insertion_sort(int[] arr, int i, int n) {

@@ -1,4 +1,4 @@
-package Step_2_DSA;
+package sorting;
 
 import java.util.ArrayList;
 

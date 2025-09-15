@@ -1,4 +1,4 @@
-package Step_2_DSA;
+package sorting;
 
 public class _5_BubbleSort_Recursion {
 	static void bubble_sort(int[] arr, int n) {
