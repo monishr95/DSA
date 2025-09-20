@@ -1,6 +1,6 @@
 package Dimensional_arrays_1D_2D;
 
-public class UpperBoundOptimistic {
+public class UpperBoundOptimised {
 
 	public static int upperBound(int[] arr, int x, int n) {
 		int low = 0, high = n - 1;

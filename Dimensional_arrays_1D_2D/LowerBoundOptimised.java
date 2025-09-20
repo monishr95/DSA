@@ -1,6 +1,6 @@
 package Dimensional_arrays_1D_2D;
 
-public class LowerBoundOptimistic {
+public class LowerBoundOptimised {
 
 	public static int lowerBound(int[] arr, int n, int x) {
 		int low = 0;
