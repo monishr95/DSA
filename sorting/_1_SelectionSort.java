@@ -3,7 +3,7 @@ package sorting;
 public class _1_SelectionSort {
 	static void selection_sort(int arr[], int n) {
 //In each iteration, we will select the minimum element from the range of the unsorted array using an inner loop.
-
+//After that, we will swap the minimum element with the first element of the selected range(in step 1).
 		for (int i = 0; i < n - 1; i++) {
 			int mini = i;
 			for (int j = i + 1; j < n; j++) {

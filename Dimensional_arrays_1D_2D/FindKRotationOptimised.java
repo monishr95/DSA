@@ -2,7 +2,8 @@ package Dimensional_arrays_1D_2D;
 
 public class FindKRotationOptimised {
 	public static int findKRotation(int[] arr) {
-		int low = 0, high = arr.length - 1;
+		int low = 0;
+		int high = arr.length - 1;
 		int ans = Integer.MAX_VALUE;
 		int index = -1;
 		while (low <= high) {
@@ -24,7 +25,7 @@ public class FindKRotationOptimised {
 				if (arr[low] < ans) {
 					index = low;
 					ans = arr[low];
-				}
+				} 
 
 				// Eliminate left half:
 				low = mid + 1;
